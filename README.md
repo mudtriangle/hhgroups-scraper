@@ -1,6 +1,6 @@
 # Web Scraping Tool for HHGroups Website
 This tool was developed to extract the lyrics from rap songs stored in HHGroups, the largest collection of Rap music in
-Spanish. Written in Python 3.8, using Docker and Scrapy.
+Spanish. Written in Python 3.8, using Docker, Scrapy, and BeautifulSoup.
 
 ## Relevance
 There are a few datasets out there that deal with data extracted from this website. However, I have found that in my
