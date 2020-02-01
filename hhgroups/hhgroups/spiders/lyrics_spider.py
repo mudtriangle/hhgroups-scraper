@@ -37,6 +37,12 @@ class LyricsSpider(CrawlSpider):
     @staticmethod
     def parse_song(response):
         soup = BeautifulSoup(response.body, features='lxml')
+
+        for res in soup.find_all('p'):
+            if '¿Tienes ya la letra para este tema? Ayúdanos y ¡' in res.get_text():
+                print('Lyrics not found. Ignoring.')
+                return
+
         web_title = soup.find('h1').get_text()
         song = parse_title(web_title)
 
