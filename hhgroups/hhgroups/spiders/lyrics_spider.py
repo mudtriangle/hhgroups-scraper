@@ -15,9 +15,10 @@ def parse_title(title_string):
 
     title_list = title_string.split(' - ')
     title_list[1] = title_list[1].split(' (')
+    title_list[1][0] = title_list[1][0].split(' [')
 
     song['artist'] = title_list[0].strip()
-    song['title'] = title_list[1][0].strip()
+    song['title'] = title_list[1][0][0].strip()
 
     return song
 
