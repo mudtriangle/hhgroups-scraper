@@ -1,5 +1,5 @@
 # Latest version of pip as of 01 Feb 2020
-pip==20.0.2
+pip==21.1
 
 # Tools for web parsing
 Scrapy==1.8.0
