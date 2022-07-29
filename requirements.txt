@@ -2,5 +2,5 @@
 pip==20.0.2
 
 # Tools for web parsing
-Scrapy==1.8.0
+Scrapy==2.6.2
 beautifulsoup4==4.8.2
